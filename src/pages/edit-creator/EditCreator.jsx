@@ -25,7 +25,7 @@ export default function EditCreator({creators, setCreators}){
         const handleFormSubmit = async (element) => {
             element.preventDefault();
 
-            const { data, error } = await supabase.from('creators').update({name: formData.name, description: formData.description, url: formData.url, imageURL: formData.imageURL, id: formData.id}).eq('id', id).select();   
+            const { data, error } = await supabase.from('creators').update({name: formData.name, description: formData.description, url: formData.url, imageURL: formData.imageURL}).eq('id', id).select();   
 
             if (error) {
                 alert('Error updating data')

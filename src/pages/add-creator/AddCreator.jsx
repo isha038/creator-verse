@@ -8,7 +8,7 @@ export default function AddCreator( {setCreators }){
 
     const [insertError, setInsertError] = useState(null)
     const [formData, setFormData] = useState({
-        id : 0,
+        // id : 0,
         name: '',
         description: '',
         url: '',
@@ -38,13 +38,13 @@ export default function AddCreator( {setCreators }){
         setFormData((prevData) => ({...prevData, [name]: value}));
     };
 
-    const Increase = (e)=>
-        {
-            setFormData(prevFormData => ({
-                ...prevFormData,
-                id: prevFormData.id + 1
-            }));
-        }
+    // const Increase = (e)=>
+    //     {
+    //         setFormData(prevFormData => ({
+    //             ...prevFormData,
+    //             id: prevFormData.id + 1
+    //         }));
+    //     }
     return(
         <div>
             <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 bg-gradient-to-b from-slate-900 to-gray-900">
@@ -91,7 +91,7 @@ export default function AddCreator( {setCreators }){
                         </div>
 
                         <div className="mt-12 flex items-center justify-end gap-x-6">
-                            <button type="submit" className="w-full rounded-md bg-blue-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={Increase}>Submit to Creatorverse</button>
+                            <button type="submit" className="w-full rounded-md bg-blue-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" >Submit to Creatorverse</button>
                         </div>
                     </form>
                 </div>
