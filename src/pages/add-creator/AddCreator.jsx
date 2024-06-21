@@ -8,7 +8,7 @@ export default function AddCreator( {setCreators }){
 
     const [insertError, setInsertError] = useState(null)
     const [formData, setFormData] = useState({
-        // id : 0,
+       
         name: '',
         description: '',
         url: '',
@@ -38,13 +38,7 @@ export default function AddCreator( {setCreators }){
         setFormData((prevData) => ({...prevData, [name]: value}));
     };
 
-    // const Increase = (e)=>
-    //     {
-    //         setFormData(prevFormData => ({
-    //             ...prevFormData,
-    //             id: prevFormData.id + 1
-    //         }));
-    //     }
+    
     return(
         <div>
             <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 bg-gradient-to-b from-slate-900 to-gray-900">
