@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="w-100 h-screen bg-cover bg-[url('.\..\src\assets\img-bg.png')]">
+    <div className="w-100 h-screen bg-cover bg-[url('/img-bg.png')]">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
